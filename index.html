@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline'">
+    <title>Bilibili 视频系列下载器</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Bilibili 视频系列下载器</h1>
+
+        <div class="input-group">
+            <label for="videoUrl">Bilibili 视频系列 URL:</label>
+            <input type="text" id="videoUrl" placeholder="例如: https://www.bilibili.com/video/abcdefg123">
+        </div>
+
+        <div class="input-group">
+            <label>下载目录:</label>
+            <span id="outputDirDisplay"></span>
+            <button id="selectFolderBtn">选择文件夹</button>
+        </div>
+
+        <div class="input-group">
+            <label for="outputTemplate">文件命名模板:</label>
+            <input type="text" id="outputTemplate" placeholder="%02d - %(title)s.%(ext)s">
+        </div>
+
+        <div class="button-group">
+            <button id="downloadBtn">开始下载</button>
+            <button id="cancelBtn" disabled>取消下载</button>
+        </div>
+
+        <div class="progress-section">
+            <h2>下载进度与日志:</h2>
+            <div class="progress-bar-container">
+                <div class="progress-bar" id="progressBar"></div>
+            </div>
+            <pre id="downloadOutput"></pre>
+        </div>
+
+        <div class="completed-section">
+            <h2>已完成下载:</h2>
+            <ul id="completedDownloads">
+                <!-- 完成的下载将在这里列出 -->
+            </ul>
+        </div>
+    </div>
+
+    <script src="renderer.js"></script>
+</body>
+</html>
