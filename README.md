@@ -1,8 +1,6 @@
 # Bilibili视频系列下载器 📺
 
-一个基于Electron的B站视频下载工具，可以方便地下载Bilibili上的视频系列。
-
-![应用截图](https://github.com/ReappealXy/bilibili-downloader/raw/main/image.png)
+一个基于Electron和JavaScript的B站视频下载工具，可以方便地下载Bilibili上的视频系列。
 
 ## ✨ 功能特点
 
@@ -102,14 +100,6 @@
 ## 📄 许可证
 
 [MIT](LICENSE)
-
-## 👨‍💻 作者
-
-<img src="https://avatars.githubusercontent.com/u/ReappealXy" width="100" height="100" style="border-radius: 50%;"/>
-
-**ReappealXy**
-
-- GitHub: [@ReappealXy](https://github.com/ReappealXy)
 
 ## 🙏 致谢
 
