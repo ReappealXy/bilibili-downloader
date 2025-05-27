@@ -1,19 +1,19 @@
-# Bilibili视频系列下载器
+# Bilibili视频系列下载器 📺
 
 一个基于Electron的B站视频下载工具，可以方便地下载Bilibili上的视频系列。
 
 ![应用截图](https://github.com/ReappealXy/bilibili-downloader/raw/main/image.png)
 
-## 功能特点
+## ✨ 功能特点
 
-- 简洁易用的图形界面
-- 支持下载Bilibili视频系列/合集/单个视频
-- 自定义下载目录和文件命名格式
-- 实时显示下载进度
-- 支持取消正在进行的下载
-- 记录已完成的下载历史
+- 📱 简洁易用的图形界面
+- 📂 支持下载Bilibili视频系列/合集/单个视频
+- 🔧 自定义下载目录和文件命名格式
+- 📊 实时显示下载进度
+- 🛑 支持取消正在进行的下载
+- 📝 记录已完成的下载历史
 
-## 安装方法
+## 📥 安装方法
 
 ### 方法一：直接下载可执行文件
 
@@ -38,7 +38,7 @@
    - 下载 [ffmpeg.exe](https://www.gyan.dev/ffmpeg/builds/)
    - 下载 [ffprobe.exe](https://www.gyan.dev/ffmpeg/builds/)
    - 下载 [yt-dlp.exe](https://github.com/yt-dlp/yt-dlp/releases)
-   - 将这些文件放在项目根目录下
+   - **将这些文件放在项目根目录下（与index.html同级目录）**
 
 4. 启动应用
    ```bash
@@ -51,7 +51,7 @@
    electron-packager . bilibili-downloader --platform=win32 --arch=x64
    ```
 
-## 使用方法
+## 🚀 使用方法
 
 1. 启动应用程序
 2. 在输入框中粘贴Bilibili视频URL（支持视频系列/合集/单个视频）
@@ -78,7 +78,7 @@
 - 尊重创作者版权，下载的视频仅供个人学习使用
 - 如遇到下载失败，可尝试更新yt-dlp（点击"更新yt-dlp"按钮）
 
-## 文件命名模板说明
+## 📋 文件命名模板说明
 
 默认的文件命名模板为`%(playlist_index)02d - %(title)s.%(ext)s`，表示：
 
@@ -93,18 +93,26 @@
 - `%(duration)s`：视频时长（秒）
 - `%(id)s`：视频ID
 
-## 技术实现
+## 🔧 技术实现
 
 - 前端：Electron、HTML、CSS、JavaScript
 - 视频下载：yt-dlp
 - 视频处理：ffmpeg
 
-## 许可证
+## 📄 许可证
 
 [MIT](LICENSE)
 
-## 致谢
+## 👨‍💻 作者
 
-- [yt-dlp](https://github.com/yt-dlp/yt-dlp)：强大的视频下载工具
-- [ffmpeg](https://ffmpeg.org/)：视频处理工具
-- [Electron](https://www.electronjs.org/)：跨平台桌面应用开发框架
+<img src="https://avatars.githubusercontent.com/u/ReappealXy" width="100" height="100" style="border-radius: 50%;"/>
+
+**ReappealXy**
+
+- GitHub: [@ReappealXy](https://github.com/ReappealXy)
+
+## 🙏 致谢
+
+- [yt-dlp](https://github.com/yt-dlp/yt-dlp) - 强大的视频下载工具
+- [ffmpeg](https://ffmpeg.org/) - 视频处理工具
+- [Electron](https://www.electronjs.org/) - 跨平台桌面应用开发框架
