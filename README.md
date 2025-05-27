@@ -2,7 +2,7 @@
 
 一个基于Electron的B站视频下载工具，可以方便地下载Bilibili上的视频系列。
 
-![应用截图](./image.png)
+![应用截图](https://github.com/ReappealXy/bilibili-downloader/raw/main/image.png)
 
 ## 功能特点
 
@@ -34,12 +34,18 @@
    npm install
    ```
 
-3. 启动应用
+3. 下载必要的二进制文件
+   - 下载 [ffmpeg.exe](https://www.gyan.dev/ffmpeg/builds/)
+   - 下载 [ffprobe.exe](https://www.gyan.dev/ffmpeg/builds/)
+   - 下载 [yt-dlp.exe](https://github.com/yt-dlp/yt-dlp/releases)
+   - 将这些文件放在项目根目录下
+
+4. 启动应用
    ```bash
    npm start
    ```
 
-4. （可选）构建可执行文件
+5. （可选）构建可执行文件
    ```bash
    npm install -g electron-packager
    electron-packager . bilibili-downloader --platform=win32 --arch=x64
@@ -99,6 +105,6 @@
 
 ## 致谢
 
-- [yt-dlp](https://github.com/yt-dlp/yt-dlp) - 强大的视频下载工具
-- [ffmpeg](https://ffmpeg.org/) - 视频处理工具
-- [Electron](https://www.electronjs.org/) - 跨平台桌面应用开发框架
+- [yt-dlp](https://github.com/yt-dlp/yt-dlp)：强大的视频下载工具
+- [ffmpeg](https://ffmpeg.org/)：视频处理工具
+- [Electron](https://www.electronjs.org/)：跨平台桌面应用开发框架
